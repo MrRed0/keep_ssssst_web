@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#position{
+    display: flex;
+    justify-content: center;
+    
+}
+#box{
+    margin-top: 70px;
+}
+#GeenItems{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.458);
+    font-size: 3rem;
+    font-family: bold;
+
+}
+
+.item{
+    display: grid;
+    grid-template-columns: 1fr 5fr 0.4fr ;
+    align-items: center;
+}
+.grid_item{
+    display: grid;
+    align-items: center;
+    padding-left: 20px;
+    grid-template-columns: 18fr 1fr;
+    margin: 30px 0px;
+    width: 60vw;
+    height: 100px;
+    border-radius: 20px;
+    background-color: white;
+}
+.right_buttons{
+    width: 34px;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+}
+
+.datum{
+    font-size: 1.3rem;
+}
+.onderwerp{
+    font-size: 2.1rem;
+    font-family: bold;
+}
+.fa-solid{
+    scale: 2.5;
+}
+.fa-trash{
+    color: red;
+}
+.fa-trash:hover{
+    color: darkred;
+}
+.fa-pen{
+    color: blue;
+}
+.fa-pen:hover{
+    color: darkblue;
+}
+

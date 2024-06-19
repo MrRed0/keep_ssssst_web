@@ -1,0 +1,93 @@
+@font-face {
+    font-family: normal;
+    src: url('font/NotoSans-Regular.ttf');
+}
+@font-face {
+    font-family: bold;
+    src: url('font/NotoSans-Bold.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: normal;
+}
+
+
+body{
+    background-color: #000;
+}
+#text{
+    font-family: bold;
+    font-size: 2.2rem;
+
+}
+
+#navbar{
+    z-index: 10;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    background-color: white;
+}
+#navbar li{
+    text-decoration: none;
+}
+#imgUser{
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: #000 solid 2px;
+}
+#imgUser:hover{
+    border: rgb(61, 106, 255) solid 2px;
+    scale: 1.1;
+    transition: all 0.15s ease-in-out;
+}
+#imgUser img{
+    min-width: 50px;
+    min-height: 50px;
+    object-fit: cover;
+}
+#imgBars{
+    scale: 3;
+    margin-right: 50px;
+    color: black;
+}
+#imgBars:hover{
+    color: rgb(61, 106, 255);
+}
+#imgBars:hover{
+    color: rgb(61, 106, 255);
+}
+#imgPlus{
+    scale: 3;
+    text-decoration: none;
+    margin-right: 50px;
+    color: black;
+}
+#imgPlus:hover{
+    color: rgb(61, 106, 255);
+}
+#signOut{
+    margin-right: 50px;
+    scale: 3;
+    color: black;
+}
+#signOut:hover{
+    color: rgb(61, 106, 255);
+}
+#bars_user{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+
+}

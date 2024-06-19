@@ -1,0 +1,168 @@
+#position {
+  display: flex;
+  justify-content: center;
+}
+#box {
+  margin-top: 130px;
+  height: auto;
+  width: 60vw;
+  background-color: white;
+  padding: 20px 50px;
+  border-radius: 20px;
+}
+#colums {
+  margin-top: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.9fr 1fr 1fr;
+}
+#position_title {
+  display: flex;
+  justify-content: center;
+}
+#position_title h1 {
+  font-size: 3.2rem;
+  font-family: bold;
+}
+
+#names,
+#inputs {
+  list-style-type: none;
+}
+#names li,
+#inputs li {
+  margin-top: 16px;
+  font-size: 1.2rem;
+}
+#imgdiv{
+  display: flex;
+  justify-content: center;
+  height: 35vh;
+  max-width: 90%;
+  overflow: hidden;
+  border: solid 1px black;
+  border-radius: 15px;
+  float: right;
+}
+
+#acountImg img {
+  height: 35vh;
+}
+#acountImg input {
+  margin-top: 10px;
+  float: right;
+}
+
+#eye1 {
+  position: absolute;
+    top: 390px;
+    margin-left: 163px;
+  cursor: pointer;
+}
+#eye1:hover {
+  color: #1a73e8;
+}
+#errorMessage{
+  color: red;
+  margin-top: 10px;
+  float: right;
+
+}
+
+/* button */
+.glowButton {
+  float: right;
+  margin-top: 50px;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 2px solid rgb(61, 106, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #000;
+  width: 90%;
+  font-size: 1.3rem;
+  font-family: bold;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.glowButton:hover {
+  background: rgb(61, 106, 255);
+  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.glowButton:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+.glowButton::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+.glowButton:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+@media (max-width: 1445px){
+  #colums{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+  #acountImg{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 1075px){
+  #position_title h1 {
+    font-size: 2.4rem;
+    font-family: bold;
+  }
+}
+
